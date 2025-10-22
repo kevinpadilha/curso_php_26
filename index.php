@@ -122,16 +122,42 @@ echo "<br>A media harmonica e: $mediaHarmonica<br>";
 
 // Calcular o volume de uma esfera com raio 5cm.
 // Dica: Elevar ao cubo -> 2 ** 3 = 8 . PI = 3.14
+CONST PI = 3.14;
+$raioAoCubo = 5 ** 3; 
+$fracao = 4/3;
+$volumeEsfera = $fracao * PI * $raioAoCubo
 
 // 2 calcular quantos segundos tem em 2 horas e 30 minutos
+$horas = 2;
+$minutos = 30;
+$minutosparaSegundos = 30 * 60; / / 1800
+
+$horasparaMinutos = 2 * 60; // 120
+$horasSegundos = $horasparaMinutos * 60; // 7200
+
+$totalemsegundos = $horasSegundos + $minutosparaSegundos; // 7200 + 1800 = 9000
+echo "<br>o total em segundos é: $totalemSegundos<br>";
+
 
 // calcular imc de uma pessoa. podem usar quaisquer valores
+$peso = 70;
+$altura = 1.88;
+$imc = round($peso / ($altura ** 2), 2 );
 
 // converter graus celsius para fahrenheit. 35c -> ?f
+$celsius = 35; 
+$fahreinheit = ($celsius * 9/5) + 32;
+
 
 // aplicar a formula de bhaskara para a seguinte equacao do segundo grau
 // $a = 1; $b = -3; $c = -4;
-
+$a = 1;
+$b = -3;
+$c = 4;
+$delta = ($b ** 2) - (4 * $a * $c);
+$x1 = (-$b + sqrt($delta)) / (2 * $a);
+$x2 = (-$b - sqrt($delta)) / (2 * $a);
+echo "<br>"0 x1 é: $x1 
 
 
 
