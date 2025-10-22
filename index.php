@@ -45,3 +45,95 @@ $valor3 = 50;
 $valor4 = 25;
 $restoDivisao = $valor4 % $valor3;
 echo "O resto é: " . $restoDivisao;
+
+
+// Tabuada do 5
+$numero = 5;
+echo"<br> Tabuada do $numero<br>"; 
+echo "1 x $numero = " . $numero * 1 . "<br>"; 
+echo "2 x $numero = " . $numero * 2 . "<br>"; 
+echo "3 x $numero = " . $numero * 3 . "<br>";
+echo "4 x $numero = " . $numero * 4 . "<br>";
+echo "5 x $numero = " . $numero * 5 . "<br>";
+echo "6 x $numero = " . $numero * 6 . "<br>";
+echo "7 x $numero = " . $numero * 7 . "<br>";
+echo "8 x $numero = " . $numero * 8 . "<br>";
+echo "9 x $numero = " . $numero * 9 . "<br>";
+echo "10 x $numero = " . $numero * 10 . "<br>";
+
+// Tabuada do 6
+$numero = 6; 
+echo"<br> Tabuada do $numero<br>";
+echo "1 x $numero = " . $numero * 1 . "<br>"; 
+echo "2 x $numero = " . $numero * 2 . "<br>"; 
+echo "3 x $numero = " . $numero * 3 . "<br>";
+echo "4 x $numero = " . $numero * 4 . "<br>";
+echo "5 x $numero = " . $numero * 5 . "<br>";
+echo "6 x $numero = " . $numero * 6 . "<br>";
+echo "7 x $numero = " . $numero * 7 . "<br>";
+echo "8 x $numero = " . $numero * 8 . "<br>";
+echo "9 x $numero = " . $numero * 9 . "<br>";
+echo "10 x $numero = " . $numero * 10 . "<br>";
+
+// Media Aritmetica
+
+echo "<br>Media Aritmetica<br>";
+
+$numero1 = 18;
+$numero2 = 9;
+$numero3 = 20; 
+
+$mediaAritmetica = ($numero1 + $numero2 + $numero3) / 3;
+
+echo "<br>A media aritmetica é: $mediaAritmetica<br>";
+
+// Media Ponderada
+
+echo "Media Ponderada <br>";
+
+$nota1 = 5;
+$nota2 = 7;
+$nota3 = 3;
+
+$peso1 = 9;
+$peso2 = 10;
+$peso3 = 11;
+
+$mpNumerador = ($nota1 * $peso1) + ($nota2 * $peso2) + ($nota3 * $peso3);
+$mpDenominador = 9 + 10 + 11;
+
+$mediaPonderada = $mpNumerador / $mpDenominador; 
+
+echo "<br>A media ponderada e: $mediaPonderada<br>";
+
+// Media Harmonica
+
+echo "<br>Media Harmonica<br>";
+
+$numero1 = 14;
+$numero2 = 8;
+$numero3 = 24;
+
+$quantidadedeProvas = 3;
+$mhDenominador = 3 / (( 1 / $numero1) + (1 / $numero2) + (1 / $numero3));
+$mediaHarmonica = round($quantidadedeProvas / $mhDenominador, 2);
+
+echo "<br>A media harmonica e: $mediaHarmonica<br>";
+
+// Calcular o volume de uma esfera com raio 5cm.
+// Dica: Elevar ao cubo -> 2 ** 3 = 8 . PI = 3.14
+
+// 2 calcular quantos segundos tem em 2 horas e 30 minutos
+
+// calcular imc de uma pessoa. podem usar quaisquer valores
+
+// converter graus celsius para fahrenheit. 35c -> ?f
+
+// aplicar a formula de bhaskara para a seguinte equacao do segundo grau
+// $a = 1; $b = -3; $c = -4;
+
+
+
+
+
+
