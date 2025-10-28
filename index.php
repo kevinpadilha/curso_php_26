@@ -125,7 +125,8 @@ echo "<br>A media harmonica e: $mediaHarmonica<br>";
 CONST PI = 3.14;
 $raioAoCubo = 5 ** 3; 
 $fracao = 4/3;
-$volumeEsfera = $fracao * PI * $raioAoCubo
+$volumeEsfera = $fracao * PI * $raioAoCubo]
+echo "<br>O volume da Esfera é: $VolumeEsfera<br>";  
 
 // 2 calcular quantos segundos tem em 2 horas e 30 minutos
 $horas = 2;
@@ -143,10 +144,12 @@ echo "<br>o total em segundos é: $totalemSegundos<br>";
 $peso = 70;
 $altura = 1.88;
 $imc = round($peso / ($altura ** 2), 2 );
+echo "<br>O IMC é: $imc<br>";
 
 // converter graus celsius para fahrenheit. 35c -> ?f
 $celsius = 35; 
 $fahreinheit = ($celsius * 9/5) + 32;
+echo "<br>0 A temperatura em graus fahrenheit é: $fahrenheit °F <br>";
 
 
 // aplicar a formula de bhaskara para a seguinte equacao do segundo grau
@@ -157,7 +160,16 @@ $c = 4;
 $delta = ($b ** 2) - (4 * $a * $c);
 $x1 = (-$b + sqrt($delta)) / (2 * $a);
 $x2 = (-$b - sqrt($delta)) / (2 * $a);
-echo "<br>"0 x1 é: $x1 
+echo "<br>"0 x1 é: $x1 e o X2 é: $x2<br>";
+
+
+// Calcular a Area de um triangulo que tenha uma base de 8cm
+// e sua altura de 6cm.
+$base = 8;
+$altura = 6;
+$areaTriangulo = ($base * $altura) / 2;
+echo "<br>A area do triangulo é: $areaTriangulo<br>";
+
 
 
 
