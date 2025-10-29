@@ -125,19 +125,19 @@ echo "<br>A media harmonica e: $mediaHarmonica<br>";
 CONST PI = 3.14;
 $raioAoCubo = 5 ** 3; 
 $fracao = 4/3;
-$volumeEsfera = $fracao * PI * $raioAoCubo]
-echo "<br>O volume da Esfera é: $VolumeEsfera<br>";  
+$VolumeEsfera = $fracao * PI * $raioAoCubo;
+echo "<br>O volume da Esfera e: $VolumeEsfera <br>";  
 
 // 2 calcular quantos segundos tem em 2 horas e 30 minutos
 $horas = 2;
 $minutos = 30;
-$minutosparaSegundos = 30 * 60; / / 1800
+$minutosparaSegundos = 30 * 60; // 1800
 
 $horasparaMinutos = 2 * 60; // 120
 $horasSegundos = $horasparaMinutos * 60; // 7200
 
-$totalemsegundos = $horasSegundos + $minutosparaSegundos; // 7200 + 1800 = 9000
-echo "<br>o total em segundos é: $totalemSegundos<br>";
+$totalemSegundos = $horasSegundos + $minutosparaSegundos; // 7200 + 1800 = 9000
+echo "<br>o total em segundos e: $totalemSegundos<br>";
 
 
 // calcular imc de uma pessoa. podem usar quaisquer valores
@@ -149,18 +149,19 @@ echo "<br>O IMC é: $imc<br>";
 // converter graus celsius para fahrenheit. 35c -> ?f
 $celsius = 35; 
 $fahreinheit = ($celsius * 9/5) + 32;
-echo "<br>0 A temperatura em graus fahrenheit é: $fahrenheit °F <br>";
+echo "<br>A temperatura em graus fahrenheit e: $fahreinheit °F<br>";
 
 
 // aplicar a formula de bhaskara para a seguinte equacao do segundo grau
 // $a = 1; $b = -3; $c = -4;
+// sqrt -> pow -> ** = potenciacao
 $a = 1;
 $b = -3;
-$c = 4;
+$c = -4;
 $delta = ($b ** 2) - (4 * $a * $c);
 $x1 = (-$b + sqrt($delta)) / (2 * $a);
 $x2 = (-$b - sqrt($delta)) / (2 * $a);
-echo "<br>"0 x1 é: $x1 e o X2 é: $x2<br>";
+echo "<br>O x1 e: $x1 e o X2 e: $x2<br>";
 
 
 // Calcular a Area de um triangulo que tenha uma base de 8cm
@@ -170,8 +171,56 @@ $altura = 6;
 $areaTriangulo = ($base * $altura) / 2;
 echo "<br>A area do triangulo é: $areaTriangulo<br>";
 
+// Converter graus Fahrenheit para Celsius. 95° -> ?°F (35)
+$fahreinheit = 95;
+$celsius = 5/9 * ($fahreinheit - 32);
+echo "<br>A temperatura em graus celsius é: $celsius °C<br>";
 
+// Converter graus Celsius para Kelvin. 35°c -> ?°K
+$celsius = 35;
+$kelvin = $celsius + 273.15;
+echo "<br>A temperatura em graus Kelvin e: $kelvin °K <br>";
 
+// Converter graus Kelvin para Celsius. ?°K -> ?°C
+$kelvin = 308.15; 
+$celsius = $kelvin - 273.15;
+echo "<br>A temperatura em graus Celsius e: $celsius °C <br>";
 
+/*
+$soma = 2
+$soma += 5; // 7
+== igual a
+!= diferente de igual a (<>)
+1 < 2
+3 > 2 
+0 <= 1
+6 >= 6
 
+E
+&&
+$tenhoDinheiro && $tenhoVontadeTomarCafe
+OU
+||
+$tenhoDinheiro || $ganheiDinheiro
 
+Tabela verdade
+V V == V
+V F == F
+F V == F 
+F F == F(v)
+*/
+
+$tenhoDinheiro = true;
+$tenhoVontadeTomarCafe = false;
+
+if ($tenhoDinheiro && $tenhoVontadeTomarCafe)
+{
+    echo "vou tomar cafe<br>";
+     
+}else if ($tenhoDinheiro && !$tenhoVontadeTomarCafe){
+    echo "vou comprar chocolate<br>";
+} else {
+    echo "nao tenho vontade de nada<br>";
+}
+
+$soma = 10 + 10;
