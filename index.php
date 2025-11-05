@@ -224,3 +224,77 @@ if ($tenhoDinheiro && $tenhoVontadeTomarCafe)
 }
 
 $soma = 10 + 10;
+
+/* Simular o funcionamento de uma calculadora
+utilizar if, else if, else.
+Operadores: + - * /
+Dica: vao ter uma variavel $operador.
+*/ 
+
+
+// Dados da calculadora
+$valor1 = 2;
+$operador = "-";
+$valor2 = 6;
+
+if ($valor1 < $valor2){
+    $valorAuxiliar = $valor1;
+    $valor1 = $valor2;
+    $valor2 = $valorAuxiliar;
+}
+
+//Calculadora
+if ($operador == "+"){
+    $soma = $valor1 + $valor2;
+    echo "Soma é: " . $soma; 
+    echo "<br>";
+} else if ($operador == "-"){
+    $soma = $valor1 - $valor2;
+    echo "soma é: " . $soma;
+    echo "<br>";
+} else if ($operador == "*"){
+    $soma = $valor1 * $valor2;
+    echo "a soma é: " . $soma;
+    echo "<br>";
+} else if ($operador == "/"){
+    $soma = $valor1 / $valor2;
+    echo "a soma é: " . $soma;
+    echo "<br>";
+}
+
+/* Fazer exercicio 8 da pagina 15 da apostila
+Não utilizar array.
+Utilizar os exercicios das medias e aplicar
+a logica que valida se o aluno passou de ano.
+*/
+
+$mediageral = 6.33;
+$nota1 = 5;
+$nota2 = 10;
+$nota3 = 4; 
+$qtdProvas = 3;
+
+$mgDenominador = 3 / ((1 / $nota1)) + ((1 / $nota2)) + ((1 / $nota3));
+$calcMedia = round($qtdProvas / $mgDenominador, 2);
+
+if ($calcMedia >= $mediageral){
+    echo "aprovado<br>";
+} else {
+    echo "reprovado<br>";
+}
+
+
+
+/**
+ * Fazer exercicio 9 da pagina 16.
+*/
+
+$nome = "Fernanda";
+$idade = 21;
+$maioridade = 18;
+
+if ($idade > $maioridade){
+    echo "$nome é maior de idade<br>";
+} else if ($idade < $maioridade){
+    echo "$nome não é maior de idade<br>";
+}
