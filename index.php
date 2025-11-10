@@ -298,3 +298,53 @@ if ($idade > $maioridade){
 } else if ($idade < $maioridade){
     echo "$nome não é maior de idade<br>";
 }
+
+
+// Dados da calculadora SWITCH CASE
+
+echo "<br>calculadora SWITCH CASE<br>";
+
+$valor1 = 2;
+$operador = "/";
+$valor2 = 6;
+
+
+
+if ($valor1 < $valor2)  {
+    $temporario = $valor1;
+    $valor1 = $valor2;
+    $valor2 = $temporario; 
+}
+switch($operador) {
+    case "+": 
+        $resultado = $valor1 + $valor2;
+        echo "A soma dos valores $valor1 + $valor2: $resultado";
+        break;
+    case "-" :  
+        $resultado = $valor1 - $valor2;
+        echo "A subtracao dos valores $valor1 - $valor2: $resultado";
+        break;
+    case "*" :  
+        $resultado = $valor1 * $valor2;
+        echo "A multiplicacao dos valores $valor1 * $valor2: $resultado";
+        break;
+    case "/" :  
+        $resultado = $valor1 / $valor2;
+        echo "A divisão dos valores $valor1 / $valor2: $resultado";
+        break;
+    default:
+        echo "O operador informado é invalido!";
+        break;
+}
+
+
+// Exercicio 5 página 15
+
+$numero = 10; 
+
+if ($numero % 2 == 0){
+    echo "$numero é par<br>";
+} else if{
+    echo "$numero é impar<br>";
+}
+
