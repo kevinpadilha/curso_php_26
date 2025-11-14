@@ -348,3 +348,51 @@ if ($numero % 2 == 0){
     echo "$numero é impar<br>";
 }
 
+// $contar = $contar + 1; || $contar += 1; || $contar++;
+for($contar = 0; $contar <= 10; $contar++) {
+    
+    $contaPares++;
+
+    if ($contar == 5) {
+        continue;
+    }
+
+    echo "<br>";
+    // echo "$numero X $contar = " . $numero * $contar;
+    
+    $restoDivisao = $contar % 2;
+    $ehDivisaoExata = $restoDivisao == 0;
+
+    if($ehDivisaoExata) {
+        echo "$contar é par";
+    } else {
+        echo "$contar é impar";
+    }
+
+    // if ($contar == 5) {
+    //     break;
+    // }
+    
+} // TERMINA O FOR AQUI.
+
+echo "<br>";
+
+// Exibir os numeros em ordem DECRESCENTE(Maior para Menor - DESC) de 10 - 0.
+
+// Contar e Exibir os numeros pares de 1 até 50;
+
+
+// Calcular o fatorial de um numero. Ex.: calcular o fatorial de 5 = 120.
+// 5!
+// 5 x 4 x 3 x 2 x 1.
+$fatorial = 5;
+$antecessor = $fatorial - 1; // 4
+
+echo "<br>";
+
+for($numero = $antecessor; $numero >= 1; $numero--) {
+    // $fatorial = $fatorial * $numero; // 120
+    $fatorial *= $numero;
+}
+
+echo "Fatorial: $fatorial <br>";
