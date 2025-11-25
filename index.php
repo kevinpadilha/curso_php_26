@@ -505,3 +505,28 @@ for ($divisor = 2; $divisor <= $antecessor; $divisor++) {
     }
 }    
 
+// WHILE
+
+$numeroAvaliado = 3;
+$antecessor = $numeroAvaliado - 1;
+$contPrimos = 0;
+$divisor = 2; 
+
+while ($contPrimos < 5){
+    $restoDivisao = $numeroAvaliado % $divisor;
+    $ehDivisaoExata = ($restoDivisao == 0);
+    
+    if($ehDivisaoExata){
+        $numeroAvaliado++;
+        $antecessor = $numeroAvaliado - 1;
+        continue;
+    }
+
+    if($divisor == $antecessor){
+        echo "O numero $numeroAvaliado é primo!";
+        $numeroAvaliado++;
+        $antecessor = $numeroAvaliado - 1;
+        $divisor = 2;
+        continue;
+    }
+}
