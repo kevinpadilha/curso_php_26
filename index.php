@@ -555,4 +555,35 @@ while ($contPrimos < 5){
         $divisor = 2;
         continue;
     }
-}
+} // FIM WHILE
+
+
+// 2 FOR
+
+$contPrimos = 0;
+$numeroAvaliado = 3;
+
+for ($numeroAvaliado = 3; $contPrimos  < 5; $numeroAvaliado++) {
+    
+    $antecessor = $numeroAvaliado -1;
+    $ehPrimo = true;
+
+    for($divisor = 2; $divisor <= $antecessor; $divisor++) {
+
+        $restoDivisao = $numeroAvaliado % $divisor; // 7 % 2 
+        $ehDivisaoExata = $restoDivisao == 0;
+
+        if ($ehDivisaoExata) {
+            $ehPrimo = false;
+            break;
+        }
+    
+    } // Fim FOR
+    
+    if($ehPrimo == true){
+        echo "O número $numeroAvaliado é PRIMO!<br>";
+        $contPrimos++;
+    }
+
+
+}  // Fim FOR
