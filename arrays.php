@@ -84,3 +84,45 @@ for ($numeroAvaliado = 3; $contPrimos  < 5; $numeroAvaliado++){
 for($i = 0; $i < 5; $i++){
     echo $contador[$i] . "<br>";
     }
+
+
+/**
+ * somar arrays:
+ * $arrayInicio = [5 , 10, 50];
+ * $arrayFim = [10, 90, 30];
+ * Resultado esperado:
+ * $arraySoma[15, 100, 80];
+ */
+
+/**
+ * multiplicar arrays:
+ * $arrayInicio = [5, 10, 8];
+ * $arrayFim = [10, 100, 3];
+ * Resultado esperado:
+ * $arrayMultiplicado[50, 1000, 24];
+ */
+
+
+// SOMA
+
+$arrayInicio = [5, 10, 50];
+$arrayFim = [10, 90, 30];
+$arraySoma = [];
+
+for($i = 0, $i < 3; $i++){
+    $arraySoma = $arrayInicio[$i] + $arrayFim[$i];
+    echo "<br> $arraySoma = ";
+    echo implode (",",$arraySoma);
+}
+
+// MULTIPLICAÇÃO
+
+$arrayInicio = [5, 10, 50];
+$arrayFim = [10, 90, 30];
+$arraySoma = [];
+
+for($i = 0; $i < 3; $i++){
+    $arraySoma [] = $arrayInicio[$i] * $arrayFim[$i];
+    echo "<br> $arraySoma = ";
+    echo implode (",", $arraySoma);
+}
