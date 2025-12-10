@@ -126,3 +126,76 @@ for($i = 0; $i < 3; $i++){
     echo "<br> $arraySoma = ";
     echo implode (",", $arraySoma);
 }
+
+
+
+/**
+ * Dada uma palavra informada pelo usuario,
+ * verificar se a mesma forma um palíndromo.
+ * 
+ * Ex: Ana, subi no onibus, kaiak, Natan.
+ * 
+ * Um for dentro do outro
+ */
+
+// echo "<br>Palíndromo:<br>";
+// $palavra = "kaiak";
+// $contador = [];
+// $letras = 4;
+// $ehPalindromo = true;
+
+// for($i = 0; $i <= 4; $i++) { // $i = indo
+
+//     $letraIndo = $palavra[$i]; //k 
+
+//     for($j = 4; $j >= 0; $j--) { // $j = voltando
+
+//         $letraVoltando = $palavra[$j]; //k
+//         $saoIguais = $letraIndo == $letraVoltando;
+
+//         if(!$saoIguais) {
+//             $ehPalindromo = false;
+//             continue;
+//         }
+//     }
+// }
+
+// if ($saoIguais) {
+//     $ehPalindromo = true;
+
+//     echo "<br>$palavra eh palindromo<br>";
+// } else {
+//     echo "<br>$palavra não eh palindromo<br>";
+
+// }
+
+
+$palavra = "ana";
+$contador = [];
+$letras = 2;
+$ehPalindromo = true;
+
+for($i = 0; $i <= 2; $i++){
+
+    $letraIndo = $palavra[$i]; // a
+    
+
+    for($j = 2; $j >= 0; $j--){
+
+        $letraVoltando = $palavra[$j]; //a
+        $saoIguais = $letraIndo == $letraVoltando;
+
+        if(!$saoIguais){
+            $ehPalindromo = false;
+            continue;
+        }
+    }
+}
+
+if ($saoIguais){
+    $ehPalindromo = true;
+
+    echo "<br>$palavra eh palindromo<br>";
+} else {
+    echo "<br>$palavra nao eh palindromo<br>";
+}
