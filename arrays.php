@@ -199,3 +199,85 @@ if ($saoIguais){
 } else {
     echo "<br>$palavra nao eh palindromo<br>";
 }
+
+
+/**
+ * Contar quantas vogais existem em uma frase.
+ * 
+ * $vogais = ['a', 'e', 'i', 'o' ,'u'];
+ * $vogalMinuscula = strtolower($palavra[$i]);
+ * 
+ * in_array();
+ * 
+ * $existeVogal = in_array($vogalMincuscula, $vogais);
+ * 
+ * Ex:
+ * $palavra = "infoserv";
+ * $palavra = "infoserv";
+ * 
+ * Saída esperada: 3 vogais;
+ */
+$palavra = "infoserv";
+
+$vogais = ['a', 'e', 'i', 'o', 'u'];
+$quantidadeVogais = 0;
+
+for ($i = 0; $i < strlen($palavra); $i++) {
+
+    // Pega a letra atual e transforma em minúscula
+    $vogalMinuscula = strtolower($palavra[$i]);
+
+    // Verifica se a letra é uma vogal
+    $existeVogal = in_array($vogalMinuscula, $vogais);
+
+    if ($existeVogal) {
+        $quantidadeVogais++;
+    }
+}
+
+echo "A palavra possui $quantidadeVogais vogais";
+
+
+/**
+ *Contar quantas vogais existem em uma frase ou palavra.
+ *Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E. 
+*/
+
+$palavra = "Infoserv";
+
+$a = 0;
+$e = 0;
+$i = 0;
+$o = 0;
+$u = 0;
+
+for ($posicao = 0; $posicao < strlen($palavra); $posicao++) {
+
+    $letra = strtolower($palavra[$posicao]);
+
+    if ($letra == 'a') {
+        $a++;
+    }
+
+    if ($letra == 'e') {
+        $e++;
+    }
+
+    if ($letra == 'i') {
+        $i++;
+    }
+
+    if ($letra == 'o') {
+        $o++;
+    }
+
+    if ($letra == 'u') {
+        $u++;
+    }
+}
+
+echo "A: $a <br>";
+echo "E: $e <br>";
+echo "I: $i <br>";
+echo "O: $o <br>";
+echo "U: $u <br>";
