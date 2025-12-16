@@ -224,26 +224,26 @@ $quantidadeVogais = 0;
 
 for ($i = 0; $i < strlen($palavra); $i++) {
 
-    // Pega a letra atual e transforma em minúscula
-    $vogalMinuscula = strtolower($palavra[$i]);
+        $vogalMinuscula = strtolower($palavra[$i]);  // transforma em minuscula
 
-    // Verifica se a letra é uma vogal
-    $existeVogal = in_array($vogalMinuscula, $vogais);
+        $existeVogal = in_array($vogalMinuscula, $vogais); // verificando se e vogal
 
-    if ($existeVogal) {
-        $quantidadeVogais++;
-    }
-}
+            if ($existeVogal) {
+             $quantidadeVogais++;
+                                }
+ }
 
-echo "A palavra possui $quantidadeVogais vogais";
+       echo "A palavra possui $quantidadeVogais vogais";
 
 
 /**
- *Contar quantas vogais existem em uma frase ou palavra.
- *Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E. 
-*/
+ *  *Contar quantas vogais existem em uma frase ou palavra.
+  *Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E. 
+  */
+ */
 
-$palavra = "Infoserv";
+<?php
+$palavra = "infoserv";
 
 $a = 0;
 $e = 0;
@@ -251,33 +251,18 @@ $i = 0;
 $o = 0;
 $u = 0;
 
-for ($posicao = 0; $posicao < strlen($palavra); $posicao++) {
+for ($x = 0; $x < strlen($palavra); $x++) {
 
-    $letra = strtolower($palavra[$posicao]);
-
-    if ($letra == 'a') {
-        $a++;
-    }
-
-    if ($letra == 'e') {
-        $e++;
-    }
-
-    if ($letra == 'i') {
-        $i++;
-    }
-
-    if ($letra == 'o') {
-        $o++;
-    }
-
-    if ($letra == 'u') {
-        $u++;
-    }
+    if ($palavra[$x] == 'a') $a++;
+    if ($palavra[$x] == 'e') $e++;
+    if ($palavra[$x] == 'i') $i++;
+    if ($palavra[$x] == 'o') $o++;
+    if ($palavra[$x] == 'u') $u++;
 }
 
-echo "A: $a <br>";
-echo "E: $e <br>";
-echo "I: $i <br>";
-echo "O: $o <br>";
-echo "U: $u <br>";
+echo "A: $a<br>";
+echo "E: $e<br>";
+echo "I: $i<br>";
+echo "O: $o<br>";
+echo "U: $u<br>";
+
