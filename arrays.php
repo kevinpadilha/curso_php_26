@@ -109,7 +109,7 @@ $arrayInicio = [5, 10, 50];
 $arrayFim = [10, 90, 30];
 $arraySoma = [];
 
-for($i = 0, $i < 3; $i++){
+for($i = 0; $i < 3; $i++){
     $arraySoma = $arrayInicio[$i] + $arrayFim[$i];
     echo "<br> $arraySoma = ";
     echo implode (",",$arraySoma);
@@ -228,19 +228,19 @@ for ($i = 0; $i < strlen($palavra); $i++) {
 
         $existeVogal = in_array($vogalMinuscula, $vogais); // verificando se e vogal
 
-            if ($existeVogal) {
-             $quantidadeVogais++;
+        if ($existeVogal) {
+        $quantidadeVogais++;
                                 }
  }
 
-       echo "A palavra possui $quantidadeVogais vogais";
+       echo "A palavra tem $quantidadeVogais vogais";
 
 
 /**
- *  *Contar quantas vogais existem em uma frase ou palavra.
-  *Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E. 
-  */
- */
+*Contar quantas vogais existem em uma frase ou palavra.
+*Totalizando a quantidade de cada uma, ou seja, quantos A, quantos E. 
+*
+*/
 
 <?php
 $palavra = "infoserv";
