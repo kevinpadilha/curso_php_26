@@ -95,3 +95,46 @@ $kelvin =
 // echo "<br>A temperatura em graus Celsius e: $celsius °C <br>";
 $kelvin = 308.15;
 $celsius =                                                                                                             
+
+
+/**
+* Exercicio para as férias
+* Calcular o tempo de duração de um jogo
+* Ex.: Jogo de futebol. Tempo de duração 90 minutos || 1 hora e meia
+* 
+* A-) Começa: 21 horas, qual a hora de termino desse jogo?
+* 
+* B-) Começa: 23 horas e 45 minutos, qual a hora de termino desse jogo?
+* R. 01:15:00
+*/
+
+
+function calcularFimJogo ($horaInicio, $minutoInicio){
+    $duracao = 90;
+
+    $minutoInicio = $minutoInicio + $duracao;
+
+    while ($minutoInicio >= 60){
+        
+        $minutoInicio -= 60;
+        $horaInicio++;
+    }
+
+    if ($horaInicio >= 24){
+
+        $horaInicio -= 24;
+    }
+
+    if ($horaInicio < 10){
+
+        $horaInicio = "0" . $horaInicio;
+    }
+
+    if ($minutoInicio < 10){
+        
+        $minutoInicio = "0" . $minutoInicio;
+    
+    }
+
+    return $horaInicio . ":" . $minutoInicio . ":00";
+}
