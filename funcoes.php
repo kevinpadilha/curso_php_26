@@ -115,26 +115,27 @@ function calcularFimJogo ($horaInicio, $minutoInicio){
     $minutoInicio = $minutoInicio + $duracao;
 
     while ($minutoInicio >= 60){
-        
+                        
         $minutoInicio -= 60;
         $horaInicio++;
-    }
-
+     }
+    
     if ($horaInicio >= 24){
 
-        $horaInicio -= 24;
+    $horaInicio -= 24;
     }
 
     if ($horaInicio < 10){
 
-        $horaInicio = "0" . $horaInicio;
+    $horaInicio = "0" . $horaInicio;
     }
 
     if ($minutoInicio < 10){
-        
-        $minutoInicio = "0" . $minutoInicio;
-    
+                                                                                        
+    $minutoInicio = "0" . $minutoInicio;
+                                                                                                
     }
 
     return $horaInicio . ":" . $minutoInicio . ":00";
+    }
 }
