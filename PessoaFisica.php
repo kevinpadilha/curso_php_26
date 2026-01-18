@@ -4,25 +4,28 @@ require_once "./PessoaAbstract.php";
 
 define("QUEBRAR_LINHA", "<br>");
 
-class PessoaFisica extends PessoaAbstract{
- 
-    public function __construct()
-    {
-        $this->resetarPessoa()
+class PessoaFisica extends PessoaAbstract {
+
+    public $CPF;
+
+    public function __construct() {
+        $this->resetarPessoa();
         $this->CPF = "";
     }
 
     public function validar() {
-        $cpf = $this->CPF;
+        $this->validarNome();
 
-        $this->validarCPF($cpf);
+        if (!$this->validarCPF($this->CPF)) {
+            throw new Exception("CPF inválido.");
+        }
+
+        return true;
     }
 
     private function validarNome() {
-        if(!$this->nome){
+        if (empty($this->nome)) {
             throw new Exception("O nome não pode estar em branco, preencha o nome.");
         }
-        
+    }
 }
-
-
