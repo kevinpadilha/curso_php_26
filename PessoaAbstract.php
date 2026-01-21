@@ -26,12 +26,13 @@ abstract class PessoaAbstract {
         $this->pontoReferencia = "";
     }
 
-    public function validarCPF($cpf) {
-        // Remove caracteres não numéricos
-        $cpf = preg_replace('/[^0-9]/', '', $cpf);
 
-        // Verifica se tem 11 dígitos
-        if (strlen($cpf) != 11) {
+    public function validarCPF($cpf) {
+        
+        $cpf = preg_replace('/[^0-9]/', '', $cpf); // Remove caracteres não numéricos
+
+        
+        if (strlen($cpf) != 11) { // Verifica se tem 11 dígitos
             return false;
         }
 
@@ -39,11 +40,11 @@ abstract class PessoaAbstract {
     }
 
     public function validarCNPJ($cnpj) {
-        // Remove caracteres não numéricos
-        $cnpj = preg_replace('/[^0-9]/', '', $cnpj);
+        
+        $cnpj = preg_replace('/[^0-9]/', '', $cnpj);  // Remove caracteres não numéricos
 
-        // Verifica se tem 14 dígitos
-        if (strlen($cnpj) != 14) {
+       
+        if (strlen($cnpj) != 14) {   // Verifica se tem 14 dígitos
             return false;
         }
 
