@@ -9,4 +9,10 @@ class EnderecoEntity{
     public $complemento;
     public $pontoReferencia;
 
+    public function __construct()
+    {
+        $this->tabelaNome = "endereco";
+    }
+
+
 }

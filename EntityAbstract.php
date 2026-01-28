@@ -18,3 +18,25 @@ abstract class EntityAbstract implements EntityInterface {
     public $atualizadoEm;
     public $usuarioAlteracao;
 }
+
+public function criar() {
+
+    }
+    
+    public function obter($id) {
+
+    }
+    
+    public function obterTodos($filtros = "") {
+
+    }
+    
+    public function atualizar($id) {
+
+    }
+    
+    public function deletar($id) {
+
+    }
+
+}
