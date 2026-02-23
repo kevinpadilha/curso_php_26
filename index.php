@@ -478,112 +478,167 @@
  *  Exercicio: encontrar os 5 primeiros numeros Primos
  */
 
-$numeroAvaliado = 7;
-$antecessor = $numeroAvaliado - 1;
-$contPrimos = 0;
+// $numeroAvaliado = 7;
+// $antecessor = $numeroAvaliado - 1;
+// $contPrimos = 0;
 
 
-for ($divisor = 2; $divisor <= $antecessor; $divisor++) {
+// for ($divisor = 2; $divisor <= $antecessor; $divisor++) {
 
-    if($contPrimos == 7) {
-        break;
-    }
+//     if($contPrimos == 7) {
+//         break;
+//     }
 
-    $restoDivisao = $numeroAvaliado % $divisor; //7 % 2
-    $ehDivisaoExata = $restoDivisao == 0;
+//     $restoDivisao = $numeroAvaliado % $divisor; //7 % 2
+//     $ehDivisaoExata = $restoDivisao == 0;
 
-    if ($ehDivisaoExata){
-        $numeroAvaliado++;
-        $antecessor = $numeroAvaliado -1;
-        continue;  
-    }
+//     if ($ehDivisaoExata){
+//         $numeroAvaliado++;
+//         $antecessor = $numeroAvaliado -1;
+//         continue;  
+//     }
 
-    if ($divisor == $antecessor) {
-        echo "O numero $numeroAvaliado é primo!";
-        $numeroAvaliado++;
-        $antecessor = $numeroAvaliado -1;
-    }
-}    
+//     if ($divisor == $antecessor) {
+//         echo "O numero $numeroAvaliado é primo!";
+//         $numeroAvaliado++;
+//         $antecessor = $numeroAvaliado -1;
+//     }
+// }    
 
-$contPrimos = 0;
-$numeroAvaliado = 3;
+// $contPrimos = 0;
+// $numeroAvaliado = 3;
 
-for ($numeroAvaliado = 3; $contPrimos  < 5; $numeroAvaliado++) {
+// for ($numeroAvaliado = 3; $contPrimos  < 5; $numeroAvaliado++) {
     
-    $antecessor = $numeroAvaliado -1;
-    $ehPrimo = true;
+//     $antecessor = $numeroAvaliado -1;
+//     $ehPrimo = true;
 
-    for($divisor = 2; $divisor <= $antecessor; $divisor++) {
+//     for($divisor = 2; $divisor <= $antecessor; $divisor++) {
 
-        $restoDivisao = $numeroAvaliado % $divisor; // 7 % 2 
-        $ehDivisaoExata = $restoDivisao == 0;
+//         $restoDivisao = $numeroAvaliado % $divisor; // 7 % 2 
+//         $ehDivisaoExata = $restoDivisao == 0;
 
-        if ($ehDivisaoExata) {
-            $ehPrimo = false;
-            break;
-        }
+//         if ($ehDivisaoExata) {
+//             $ehPrimo = false;
+//             break;
+//         }
     
-    } // Fim FOR
+//     } // Fim FOR
     
-    if($ehPrimo == true){
-        echo "O número $numeroAvaliado é PRIMO!<br>";
-        $contPrimos++;
-    }
+//     if($ehPrimo == true){
+//         echo "O número $numeroAvaliado é PRIMO!<br>";
+//         $contPrimos++;
+//     }
 
 
-}  // Fim FOR// WHILE
+// }  // Fim FOR// WHILE
 
-$numeroAvaliado = 3;
-$antecessor = $numeroAvaliado - 1;
-$contPrimos = 0;
-$divisor = 2; 
+// $numeroAvaliado = 3;
+// $antecessor = $numeroAvaliado - 1;
+// $contPrimos = 0;
+// $divisor = 2; 
 
-while ($contPrimos < 5){
-    $restoDivisao = $numeroAvaliado % $divisor;
-    $ehDivisaoExata = ($restoDivisao == 0);
+// while ($contPrimos < 5){
+//     $restoDivisao = $numeroAvaliado % $divisor;
+//     $ehDivisaoExata = ($restoDivisao == 0);
     
-    if($ehDivisaoExata){
-        $numeroAvaliado++;
-        $antecessor = $numeroAvaliado - 1;
-        continue;
-    }
+//     if($ehDivisaoExata){
+//         $numeroAvaliado++;
+//         $antecessor = $numeroAvaliado - 1;
+//         continue;
+//     }
 
-    if($divisor == $antecessor){
-        echo "O numero $numeroAvaliado é primo!";
-        $numeroAvaliado++;
-        $antecessor = $numeroAvaliado - 1;
-        $divisor = 2;
-        continue;
-    }
-} // FIM WHILE
+//     if($divisor == $antecessor){
+//         echo "O numero $numeroAvaliado é primo!";
+//         $numeroAvaliado++;
+//         $antecessor = $numeroAvaliado - 1;
+//         $divisor = 2;
+//         continue;
+//     }
+// } // FIM WHILE
 
 
-// 2 FOR
+// // 2 FOR
 
-$contPrimos = 0;
-$numeroAvaliado = 3;
+// $contPrimos = 0;
+// $numeroAvaliado = 3;
 
-for ($numeroAvaliado = 3; $contPrimos  < 5; $numeroAvaliado++) {
+// for ($numeroAvaliado = 3; $contPrimos  < 5; $numeroAvaliado++) {
     
-    $antecessor = $numeroAvaliado -1;
-    $ehPrimo = true;
+//     $antecessor = $numeroAvaliado -1;
+//     $ehPrimo = true;
 
-    for($divisor = 2; $divisor <= $antecessor; $divisor++) {
+//     for($divisor = 2; $divisor <= $antecessor; $divisor++) {
 
-        $restoDivisao = $numeroAvaliado % $divisor; // 7 % 2 
-        $ehDivisaoExata = $restoDivisao == 0;
+//         $restoDivisao = $numeroAvaliado % $divisor; // 7 % 2 
+//         $ehDivisaoExata = $restoDivisao == 0;
 
-        if ($ehDivisaoExata) {
-            $ehPrimo = false;
-            break;
-        }
+//         if ($ehDivisaoExata) {
+//             $ehPrimo = false;
+//             break;
+//         }
     
-    } // Fim FOR
+//     } // Fim FOR
     
-    if($ehPrimo == true){
-        echo "O número $numeroAvaliado é PRIMO!<br>";
-        $contPrimos++;
-    }
+//     if($ehPrimo == true){
+//         echo "O número $numeroAvaliado é PRIMO!<br>";
+//         $contPrimos++;
+//     }
 
 
-}  // Fim FOR
+// }  // Fim FOR
+
+
+
+<?php
+// $_GET
+// $_POST
+// $_REQUEST
+// empty() => falsy(null,undefined, [], {}, 0, '0' e false) TRUE
+// isset() => true || false | se a parametro existe.
+// ?rota=criar
+// http://localhost/curso_php_26/
+// http://localhost/curso_php_26/?rota=criar
+// http://localhost/curso_php_26/?rota=criar&id=5
+// http://localhost/curso_php_26/?rota=criar&nome-joao&idade=18
+
+$dados = $_REQUEST;
+
+require_once "./conexao.php";
+
+$irParaListagem = empty($dados) || !isset($dados["rota"]);
+
+if($irParaListagem){
+    echo "estou na listagem";
+    //chamar funcao de listagem
+    return;
+}
+
+$rota = $dados["rota"];
+
+if ($rota == "listar"){
+    echo "estou na listar";
+    return;
+}
+
+if ($rota == "editar"){
+    echo "estou na editar";
+    return;
+}
+
+if ($rota == "criar"){
+    echo "$dados[nome]";
+    echo "$dados[idade]";
+    echo "estou na criar";
+    return;
+}
+
+if ($rota == "atualizar"){
+    echo "estou na atualizar";
+    return;
+}
+
+if ($rota == "excluir"){
+    echo "estou na excluir";
+    return;
+}
